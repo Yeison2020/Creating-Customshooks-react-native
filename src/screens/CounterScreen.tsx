@@ -35,9 +35,13 @@ const styles = StyleSheet.create({
   btn2: {
     backgroundColor: 'green',
     borderRadius: 5,
+    marginBottom: 10,
+    padding: 15,
   },
   btn: {
     backgroundColor: 'red',
     borderRadius: 5,
+    marginBottom: 10,
+    padding: 15,
   },
 });
