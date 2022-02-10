@@ -33,10 +33,13 @@ const styles = StyleSheet.create({
     top: -15,
   },
   btn2: {
-    backgroundColor: 'green',
     borderRadius: 5,
     marginBottom: 10,
     padding: 15,
+    borderColor: '#20232a',
+    backgroundColor: '#61dafb',
+    color: '#20232a',
+    textAlign: 'center',
   },
   btn: {
     backgroundColor: 'red',
