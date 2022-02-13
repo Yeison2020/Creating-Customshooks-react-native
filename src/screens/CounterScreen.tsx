@@ -13,14 +13,6 @@ const CounterScreen = () => {
         onPress={() => setCounter(curr => curr + 1)}
         position="bl"
       />
-
-      {/* <TouchableOpacity
-        style={styles.fabLocationR}
-        onPress={() => setCounter(curr => curr - 1)}>
-        <View style={styles.fab}>
-          <Text style={styles.fabText}>-1</Text>
-        </View>
-      </TouchableOpacity> */}
     </View>
   );
 };
