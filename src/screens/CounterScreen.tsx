@@ -6,14 +6,11 @@ const CounterScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Contador: {counter}</Text>
-      <TouchableOpacity onPress={() => setCounter(curr => curr + 1)}>
-        <View style={styles.btn2}>
-          <Text>Click me +1 </Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => setCounter(curr => curr - 1)}>
-        <View style={styles.btn}>
-          <Text>Click me -1 </Text>
+      <TouchableOpacity
+        style={styles.fab}
+        onPress={() => setCounter(curr => curr + 1)}>
+        <View style={styles.fab}>
+          <Text style={styles.fabText}>+1</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -21,6 +18,8 @@ const CounterScreen = () => {
 };
 
 export default CounterScreen;
+
+// Recommended to order styles in A-Z orders
 
 const styles = StyleSheet.create({
   container: {
@@ -48,5 +47,18 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
     padding: 15,
+  },
+  fab: {
+    backgroundColor: '#5856D6',
+    width: 60,
+    height: 60,
+    borderRadius: 100,
+  },
+
+  fabText: {
+    color: 'white',
+    fontSize: 25,
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
 });
