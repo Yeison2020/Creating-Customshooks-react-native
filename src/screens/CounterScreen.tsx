@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    backgroundColor: '#707382',
   },
   title: {
     textAlign: 'center',
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
     top: -15,
   },
   btn2: {
+    height: 70,
     borderRadius: 5,
     marginBottom: 10,
     padding: 15,
