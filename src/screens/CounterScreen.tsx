@@ -7,7 +7,12 @@ const CounterScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Contador: {counter}</Text>
-      <Fab title="-1" />
+      <Fab title="-1" onPress={() => setCounter(curr => curr - 1)} />
+      <Fab
+        title="+1"
+        onPress={() => setCounter(curr => curr + 1)}
+        position="bl"
+      />
 
       {/* <TouchableOpacity
         style={styles.fabLocationR}
